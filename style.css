@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color:  #2d142c;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    color: #fff;
+    
+}
+.navbar{
+  width: 390px;
+  height: 590px;
+  /* border: 1px solid red; */
+  background-color: #510a32;
+  border-radius: 30px 1px 1px 30px;
+  box-shadow: 5px 6px 11px 4px rgba(0,0,0,0.4);
+  border-right:5px solid #c72c41;
+  padding: 10px;
+}
+.logo_content{
+    /* border: 1px solid #fff;   */
+    
+    width: 360px;
+    margin-top: 2rem;
+    
+    position: relative;
+    font-size: 20px;
+    
+}
+.logo_center{
+    display: flex;
+    padding: 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+p{
+   padding-left: 45px;
+}
+.logo_bottom{
+    font-size: 25px;
+    position: absolute;
+    background: #801336;
+    width:50px ;
+    height: 50px;
+    right: 10px;
+    border-radius: 50%;
+    text-align: center; 
+    padding-top: 10px;
+}
+/* .icon{
+    position: absolute;
+    top:50%;
+     transform: translate(50%, 50%); 
+}*/
+.logo_center1{
+    display: flex;
+    padding: 20px;
+    margin: 10px;
+   
+}
+
+.logo-active{
+    background-color: #c72c41;
+    border-radius: 20px;
+    width: 370px;
+}
