@@ -4,6 +4,7 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    
 
 }
 
@@ -15,6 +16,8 @@ body{
     margin-top: 30px;
     color: #fff;
     
+    
+    
 }
 .navbar{
   width: 390px;
@@ -25,15 +28,28 @@ body{
   box-shadow: 5px 6px 11px 4px rgba(0,0,0,0.4);
   border-right:5px solid #c72c41;
   padding: 10px;
+  transition: all 0.5s ease;
+  position: relative;
+  
 }
+
+.navbar.active{
+    width: 90px;
+    overflow: hidden;
+   
+    
+}
+
 .logo_content{
     /* border: 1px solid #fff;   */
     
-    width: 360px;
+    
     margin-top: 2rem;
     
     position: relative;
     font-size: 20px;
+   
+    
     
 }
 .logo_center{
@@ -51,11 +67,24 @@ p{
     background: #801336;
     width:50px ;
     height: 50px;
-    right: 10px;
+    right: 1px;
     border-radius: 50%;
     text-align: center; 
     padding-top: 10px;
+    cursor: pointer;
+    
+    
 }
+.navbar.active .logo_center-bot .icon{
+    transform: rotateZ(-180deg);
+}
+.navbar.active.logo_bottom{
+    position: absolute;
+    /* background: red; */
+    margin: 10px;
+    padding: 30px;
+}
+
 /* .icon{
     position: absolute;
     top:50%;
@@ -67,9 +96,37 @@ p{
     margin: 10px;
    
 }
+.logo_center:hover {
+    transition: ease 0.9s;
+    background-color: #c72c41;
+    border-radius: 20px;
+    width: 370px;
+    
+}
+
+.logo-hover{
+    transition: ease 0.9s;
+    background-color: #c72c41;
+    border-radius: 20px;
+    width: 370px;
+}
+.logo_center:focus{
+    background-color: #c72c41;
+    border-radius: 20px;
+    width: 370px;
+    
+}
+button.selected .logo_center{
+    background-color: #c72c41;
+    border-radius: 20px;
+    width: 370px;
+}
 
 .logo-active{
     background-color: #c72c41;
     border-radius: 20px;
     width: 370px;
+}
+.icon{
+    transition: ease-in-out 0.3s;
 }
